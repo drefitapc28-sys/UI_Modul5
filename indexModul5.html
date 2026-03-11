@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BimbelPintar</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <style>
+    .navbar-custom { background-color: #1565c0; }
+    .hero { background-color: #1565c0; color: white; padding: 80px 0; }
+    .btn-daftar { background-color: #ff8f00; color: white; font-weight: bold; }
+    .btn-daftar:hover { background-color: #e65100; color: white; }
+    footer { background-color: #0d2a4a; color: #aaa; }
+    footer a { color: #aaa; text-decoration: none; }
+    footer a:hover { color: white; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">📚 BimbelPintar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="#program">Program</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#daftar">Kontak</a></li>
+        <li class="nav-item ms-2">
+          <a class="btn btn-daftar px-3 rounded" href="#daftar">Daftar Sekarang</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold mb-3">Belajar Lebih Mudah<br/>Bersama BimbelPintar!</h1>
+    <p class="mb-4">Bimbingan belajar online untuk SD, SMP, SMA, dan persiapan UTBK.</p>
+    <a href="#daftar" class="btn btn-daftar btn-lg px-4 me-2">Daftar Gratis</a>
+    <a href="#program" class="btn btn-outline-light btn-lg px-4">Lihat Program</a>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="py-5 bg-light" id="program">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4" style="color:#1565c0">Program Kami</h2>
+    <div class="row g-4">
+
+      <!-- UTBK – melebar penuh -->
+      <div class="col-12">
+        <div class="card p-4" style="background:#e3f2fd; border-left: 5px solid #1565c0;">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <span class="badge bg-warning text-dark mb-2">
+                <i class="bi bi-star-fill me-1"></i> Paling Diminati
+              </span>
+              <h4 class="fw-bold">Persiapan UTBK / SNBT 2026</h4>
+              <p class="text-muted mb-2">Program intensif 3 bulan dengan materi lengkap TPS dan TKA. Dibimbing pengajar berpengalaman dengan tryout mingguan.</p>
+              <div class="d-flex flex-wrap gap-3 text-muted small">
+                <span><i class="bi bi-person me-1"></i>30 Pertemuan</span>
+                <span><i class="bi bi-calendar me-1"></i>Mulai 10 Januari 2026</span>
+                <span><i class="bi bi-tag me-1"></i>Rp 1.200.000</span>
+              </div>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+              <a href="#daftar" class="btn btn-daftar px-4 rounded">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Kartu di bawah -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-3 text-center">
+          <i class="bi bi-book fs-1 text-success mb-2"></i>
+          <h5 class="fw-bold">Bimbel SD</h5>
+          <p class="text-muted small">Calistung dan pelajaran dasar untuk anak SD kelas 1–6.</p>
+          <span class="badge bg-success">Mulai Rp 300.000</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-3 text-center">
+          <i class="bi bi-journal-text fs-1 text-primary mb-2"></i>
+          <h5 class="fw-bold">Bimbel SMP</h5>
+          <p class="text-muted small">Matematika, IPA, dan IPS untuk siswa SMP kelas 7–9.</p>
+          <span class="badge bg-primary">Mulai Rp 400.000</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-3 text-center">
+          <i class="bi bi-mortarboard fs-1 text-danger mb-2"></i>
+          <h5 class="fw-bold">Bimbel SMA</h5>
+          <p class="text-muted small">Fisika, Kimia, Matematika untuk siswa SMA kelas 10–12.</p>
+          <span class="badge bg-danger">Mulai Rp 500.000</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-3 text-center">
+          <i class="bi bi-translate fs-1 text-info mb-2"></i>
+          <h5 class="fw-bold">Bahasa Inggris</h5>
+          <p class="text-muted small">Latihan speaking dan listening untuk semua jenjang.</p>
+          <span class="badge bg-info text-dark">Mulai Rp 350.000</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="py-5 bg-white" id="tentang">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4" style="color:#1565c0">Mengapa BimbelPintar?</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-3">
+          <i class="bi bi-person-check-fill fs-1 text-primary mb-2 d-block"></i>
+          <h5 class="fw-bold">Pengajar Berpengalaman</h5>
+          <p class="text-muted small">Semua pengajar kami telah terseleksi dan berpengalaman minimal 5 tahun.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3">
+          <i class="bi bi-laptop-fill fs-1 text-primary mb-2 d-block"></i>
+          <h5 class="fw-bold">Belajar Online</h5>
+          <p class="text-muted small">Belajar kapan saja dan di mana saja lewat platform online kami.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3">
+          <i class="bi bi-graph-up-arrow fs-1 text-primary mb-2 d-block"></i>
+          <h5 class="fw-bold">Hasil Terbukti</h5>
+          <p class="text-muted small">95% siswa kami mengalami peningkatan nilai yang signifikan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM DAFTAR -->
+<section class="py-5 bg-light" id="daftar">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center fw-bold mb-4" style="color:#1565c0">Daftar Trial Gratis</h2>
+        <div class="card p-4 shadow-sm">
+          <div class="mb-3">
+            <label class="form-label fw-bold">Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Masukkan nama lengkap"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Nomor WhatsApp</label>
+            <input type="tel" class="form-control" placeholder="Contoh: 08123456789"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Pilih Program</label>
+            <select class="form-select">
+              <option value="">-- Pilih Program --</option>
+              <option>Bimbel SD</option>
+              <option>Bimbel SMP</option>
+              <option>Bimbel SMA</option>
+              <option>Persiapan UTBK</option>
+            </select>
+          </div>
+          <button class="btn btn-daftar w-100 py-2">Kirim Pendaftaran</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="text-white fw-bold">📚 BimbelPintar</h5>
+        <p class="small">Bimbingan belajar terpercaya untuk semua jenjang pendidikan.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white fw-bold">Program</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">Bimbel SD</a></li>
+          <li><a href="#">Bimbel SMP</a></li>
+          <li><a href="#">Bimbel SMA</a></li>
+          <li><a href="#">Persiapan UTBK</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white fw-bold">Kontak</h6>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-envelope-fill me-1"></i> info@bimbelpintar.id</li>
+          <li><i class="bi bi-whatsapp me-1"></i> 0812-3456-7890</li>
+          <li><i class="bi bi-geo-alt-fill me-1"></i> Surabaya, Jawa Timur</li>
+        </ul>
+      </div>
+    </div>
+    <hr style="border-color:#1e3a5a"/>
+    <p class="text-center small mb-0">© 2026 BimbelPintar. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
